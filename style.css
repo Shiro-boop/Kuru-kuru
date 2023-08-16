@@ -1,0 +1,57 @@
+*,*::before, *::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f7abf6b2;
+    overflow: hidden;
+}
+
+.wrapper {
+    margin-top: 362px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.data-count {
+    margin-bottom: 40px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 50px;
+    color: #572556;
+}
+
+.data-button {
+    padding: 15px 40px;
+    background: #e36ddfbc;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.kuru-start {
+    visibility: hidden;
+}
+
+
+
+.kuruClick {
+    position: absolute;
+    animation: KuruMov 1300ms infinite linear;
+    visibility: visible;
+}
+
+@keyframes KuruMov {
+    0% {
+        left: 1800px;
+    }
+
+    100% {
+        left: -400px;
+    }
+    
+}
